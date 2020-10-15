@@ -2,6 +2,7 @@ package com.cronutils;
 
 import java.text.ParseException;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.threeten.bp.ZonedDateTime;
 import org.threeten.bp.format.DateTimeFormatter;
@@ -16,6 +17,7 @@ public class OpenIssuesTest {
     private DateTimeFormatter dfSimple = DateTimeFormatter.ofPattern("hh:mm:ss MM/dd/yyyy a X");
     private DateTimeFormatter df = DateTimeFormatter.ofPattern("hh:mm:ss EEE, MMM dd yyyy a X");
 
+    @Ignore
     @Test
     public void testBasicCron() throws ParseException {
         printDate("03:15:00 11/20/2015 PM Z");

@@ -6,6 +6,7 @@ import com.cronutils.model.CronType;
 import com.cronutils.model.definition.CronDefinitionBuilder;
 import com.cronutils.model.time.ExecutionTime;
 import com.cronutils.parser.CronParser;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.threeten.bp.ZonedDateTime;
@@ -18,6 +19,7 @@ public class OpenIssuesTest {
     private DateTimeFormatter dfSimple = DateTimeFormatter.ofPattern("hh:mm:ss MM/dd/yyyy a X");
     private DateTimeFormatter df = DateTimeFormatter.ofPattern("hh:mm:ss EEE, MMM dd yyyy a X");
 
+    @Ignore
     @Test
     public void testBasicCron() throws ParseException {
         printDate("03:15:00 11/20/2015 PM Z");
