@@ -46,12 +46,7 @@ class EveryFieldValueGenerator extends FieldValueGenerator {
             from =cronField.getConstraints().getStartRange();
             to = cronField.getConstraints().getEndRange();
         }
-        
-        log.trace(String.format(
-                "processing \"%s\" at %s",
-                cronField.getExpression().asString(), ZonedDateTime.now()
-        ));
-    }
+   }
 
     @Override
     public int generateNextValue(int reference) throws NoSuchValueException {
